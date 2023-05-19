@@ -1,0 +1,11 @@
+sources:
+  variabledefault:
+    description: "This entry leads to an example csv file in the user's home directory by default, but the user can pass root='somepath' to override that."
+    driver: csv
+    args:
+      urlpath: "{{root}}/example.csv"
+    parameters:
+      root:
+        description: "root path"
+        type: str
+        default: "env(HOME)"
