@@ -13,7 +13,7 @@ setup(
     zip_safe=False,
     entry_points={
         'intake.catalogs': [
-            'mydata = package:data'
+            'cat0 = package:data'
         ]
     }
 )
